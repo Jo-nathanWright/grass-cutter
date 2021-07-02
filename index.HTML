@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="game.css">
+    <title>Moon Miner</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Hello Out there!</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row py-5">
+            <div class="col-12 d-flex justify-content-center pb-4">
+                <div><img src="Cheese-Moon.png" onclick="mine()" alt="Chedder"></div>
+            </div>
+            <div class="col-12 d-flex justify-content-around py-4">
+                <div class="d-flex flex-column">
+                    <p>Pickaxe: <span id="pickaxePrice">100</span> cheese</p>
+                    <button class="btn btn-primary mb-1" onclick="buyPickaxe()">Buy Pickaxe <i
+                            class="mdi mdi-pickaxe"></i></button>
+                    <p class="mt-2">Cutter: <span id="cutterPrice">250</span> cheese</p>
+                    <button class="btn btn-primary mb-1" onclick="buyCutter()">Buy Cutter <i
+                            class="mdi mdi-saw-blade"></i></button>
+                    <p class="mt-2">Rover: <span id="roverPrice">500</span> cheese</p>
+                    <button class="btn btn-primary mb-1" onclick="buyRover()">Buy Rover <i
+                            class="mdi mdi-car-convertible"></i></button>
+                    <p class="mt-2">Rocket: <span id="rocketPrice">1000</span> cheese</p>
+                    <button class="btn btn-primary mb-1" onclick="buyRocket()">Buy Rocket <i
+                            class="mdi mdi-rocket-launch"></i></button>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-around py-4">
+                <p>You currently have <span id="cheeseTotal">0</span> cheese</p>
+            </div>
+            <div class="col-12 d-flex flex-column align-items-center pt-4">
+                <p>You have <span id="pickaxe">0</span> pickaxes!</p>
+            </div>
+            <div class="col-12 d-flex flex-column align-items-center">
+                <p>You have <span id="cutter">0</span> drills!</p>
+            </div>
+        </div>
+    </main>
+    <footer class="container"></footer>
+    <script src="game.js"></script>
+</body>
+
+</html>
