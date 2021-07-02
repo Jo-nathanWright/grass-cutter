@@ -24,16 +24,16 @@
             <div class="col-12 d-flex justify-content-around py-4">
                 <div class="d-flex flex-column">
                     <p>Pickaxe: <span id="pickaxePrice">100</span> cheese</p>
-                    <button class="btn btn-primary mb-1" onclick="buyPickaxe()">Buy Pickaxe <i
+                    <button class="btn btn-primary mb-1" onclick="buy('click', 'pickaxes')">Buy Pickaxe <i
                             class="mdi mdi-pickaxe"></i></button>
                     <p class="mt-2">Cutter: <span id="cutterPrice">250</span> cheese</p>
-                    <button class="btn btn-primary mb-1" onclick="buyCutter()">Buy Cutter <i
+                    <button class="btn btn-primary mb-1" onclick="buy('click', 'cutter')">Buy Cutter <i
                             class="mdi mdi-saw-blade"></i></button>
                     <p class="mt-2">Rover: <span id="roverPrice">500</span> cheese</p>
-                    <button class="btn btn-primary mb-1" onclick="buyRover()">Buy Rover <i
+                    <button class="btn btn-primary mb-1" onclick="buy('auto', 'rovers')">Buy Rover <i
                             class="mdi mdi-car-convertible"></i></button>
                     <p class="mt-2">Rocket: <span id="rocketPrice">1000</span> cheese</p>
-                    <button class="btn btn-primary mb-1" onclick="buyRocket()">Buy Rocket <i
+                    <button class="btn btn-primary mb-1" onclick="buy('auto', 'rockets')">Buy Rocket <i
                             class="mdi mdi-rocket-launch"></i></button>
                 </div>
             </div>
@@ -45,6 +45,12 @@
             </div>
             <div class="col-12 d-flex flex-column align-items-center">
                 <p>You have <span id="cutter">0</span> drills!</p>
+            </div>
+            <div class="col-12 d-flex flex-column align-items-center">
+                <p>You have <span id="rover">0</span> rovers!</p>
+            </div>
+            <div class="col-12 d-flex flex-column align-items-center">
+                <p>You have <span id="rocket">0</span> rockets!</p>
             </div>
         </div>
     </main>
