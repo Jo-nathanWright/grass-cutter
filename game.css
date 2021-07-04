@@ -14,3 +14,12 @@ hr {
     border-color: black;
     width:100%
 }
+
+.click{
+    object-fit: cover;
+    height: 50%;
+}
+
+.grass{
+    background-image: url(Lawn-background.jpg);
+}

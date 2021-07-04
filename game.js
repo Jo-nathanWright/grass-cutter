@@ -204,6 +204,8 @@ function update() {
     document.getElementById("cutterPrice").innerText = `${modifiers.click.cutter.price}`
     document.getElementById("roverPrice").innerText = `${modifiers.auto.rovers.price}`
     document.getElementById("rocketPrice").innerText = `${modifiers.auto.rockets.price}`
+    document.getElementById("clickMod").innerText = `${calcModifiers('click')}`
+    document.getElementById("autoMod").innerText = `${calcModifiers('auto')}`
 
     calcModifiers('click')
     calcModifiers('auto')

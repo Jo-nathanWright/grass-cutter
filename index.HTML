@@ -9,30 +9,12 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="game.css">
-    <title>Moon Miner</title>
+    <title>Grass Game</title>
 </head>
 
-<style>
-    body.debug .container,
-    body.debug .container-fluid {
-        outline: 2px double blue;
-        outline-offset: -2px;
-    }
-
-    body.debug .row {
-        outline: 2px dashed red;
-        outline-offset: -2px;
-    }
-
-    body.debug [class*="col-"] {
-        outline: 2px dotted forestgreen;
-        outline-offset: -3px;
-    }
-</style>
-
-<body class="debug">
+<body>
     <header class="text-center">
-        <h1>Welcome to MOON MINER!</h1>
+        <h1>Grass Growers Inc.</h1>
     </header>
     <main class="container-fluid">
         <div class="row flex-row justify-content-between">
@@ -42,28 +24,41 @@
                         <h3>Company Inventory</h3>
                         <hr>
                     </div>
-                    <div class="col-12 d-flex flex-column justify-content-between text-center">
+                    <div class="col-12 d-flex flex-row justify-content-center text-center">
                         <p>You currently have $<span id="cheeseTotal">0</span></p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 py-5">
                         <div class="row justify-content-center">
                             <div class="col-4 text-center">
-                                <p>Click Multiplier: <span>0</span></p>
+                                <p>Click Multiplier: <span id="clickMod">0</span></p>
                             </div>
                             <div class="col-4 text-center">
-                                <p>Auto Collecter: <span>0</span></p>
+                                <p>Auto Collecter: <span id="autoMod">0</span></p>
                             </div>
                         </div>
                         <div class="text-center">
                             <p>Your Money Makers</p>
+                            <div class="col-12 d-flex flex-column align-items-center pt-4">
+                                <p>You have <span id="pickaxe">0</span> pickaxes!</p>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center">
+                                <p>You have <span id="cutter">0</span> cutters!</p>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center">
+                                <p>You have <span id="rover">0</span> rovers!</p>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center">
+                                <p>You have <span id="rocket">0</span> rockets!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="row flex-column">
-                    <div class="col-12 d-flex justify-content-center pb-4">
-                        <div><img src="Cheese-Moon.png" onclick="mine()" alt="Chedder"></div>
+                    <div class="col-12 d-flex justify-content-center pb-4 grass">
+                        <div class="d-flex justify-content-center align-items-end"><img class="click" src="mower.png"
+                                onclick="mine()" alt="Chedder"></div>
                     </div>
                 </div>
             </div>
@@ -72,6 +67,22 @@
                     <div class="col-12 d-flex flex-column justify-content-end text-center">
                         <h3>Company Upgrades</h3>
                         <hr>
+                    </div>
+                    <div class="col-12 d-flex justify-content-around py-4">
+                        <div class="d-flex flex-column">
+                            <p>Pickaxe: <span id="pickaxePrice">100</span> cheese</p>
+                            <button class="btn btn-primary mb-1" onclick="buy('click', 'pickaxes')">Buy Pickaxe <i
+                                    class="mdi mdi-pickaxe"></i></button>
+                            <p class="mt-2">Cutter: <span id="cutterPrice">250</span> cheese</p>
+                            <button class="btn btn-primary mb-1" onclick="buy('click', 'cutter')">Buy Cutter <i
+                                    class="mdi mdi-saw-blade"></i></button>
+                            <p class="mt-2">Rover: <span id="roverPrice">500</span> cheese</p>
+                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'rovers')">Buy Rover <i
+                                    class="mdi mdi-car-convertible"></i></button>
+                            <p class="mt-2">Rocket: <span id="rocketPrice">1000</span> cheese</p>
+                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'rockets')">Buy Rocket <i
+                                    class="mdi mdi-rocket-launch"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
