@@ -30,7 +30,7 @@
                     <div class="col-12 py-5">
                         <div class="row justify-content-center">
                             <div class="col-4 text-center">
-                                <p>Click Multiplier: <span id="clickMod">0</span></p>
+                                <p>Click Multiplier: <span id="clickMod">1</span></p>
                             </div>
                             <div class="col-4 text-center">
                                 <p>Auto Collecter: <span id="autoMod">0</span></p>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-4">
                 <div class="row flex-column">
-                    <div class="col-12 d-flex justify-content-center pb-4 grass">
+                    <div class="col-12 d-flex justify-content-center pb-4 grass img-scroll">
                         <div class="d-flex justify-content-center align-items-end"><img class="click" src="mower.png"
                                 onclick="mine()" alt="Chedder"></div>
                     </div>
@@ -70,16 +70,16 @@
                     </div>
                     <div class="col-12 d-flex justify-content-around py-4">
                         <div class="d-flex flex-column">
-                            <p>Pickaxe: <span id="pickaxePrice">100</span> cheese</p>
+                            <p class="text-center">Pickaxe: $<span id="pickaxePrice">100</span></p>
                             <button class="btn btn-primary mb-1" onclick="buy('click', 'pickaxes')">Buy Pickaxe <i
                                     class="mdi mdi-pickaxe"></i></button>
-                            <p class="mt-2">Cutter: <span id="cutterPrice">250</span> cheese</p>
+                            <p class="mt-2 text-center">Cutter: $<span id="cutterPrice">250</span></p>
                             <button class="btn btn-primary mb-1" onclick="buy('click', 'cutter')">Buy Cutter <i
                                     class="mdi mdi-saw-blade"></i></button>
-                            <p class="mt-2">Rover: <span id="roverPrice">500</span> cheese</p>
+                            <p class="mt-2 text-center">Rover: $<span id="roverPrice">500</span></p>
                             <button class="btn btn-primary mb-1" onclick="buy('auto', 'rovers')">Buy Rover <i
                                     class="mdi mdi-car-convertible"></i></button>
-                            <p class="mt-2">Rocket: <span id="rocketPrice">1000</span> cheese</p>
+                            <p class="mt-2 text-center">Rocket: $<span id="rocketPrice">1000</span></p>
                             <button class="btn btn-primary mb-1" onclick="buy('auto', 'rockets')">Buy Rocket <i
                                     class="mdi mdi-rocket-launch"></i></button>
                         </div>

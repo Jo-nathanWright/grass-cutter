@@ -22,4 +22,11 @@ hr {
 
 .grass{
     background-image: url(Lawn-background.jpg);
+    animation: imageMovement 5s linear infinite;
+}
+
+@keyframes imageMovement {
+    100% {
+        background-position-y: 540px; /* width of the image */
+    }        
 }
