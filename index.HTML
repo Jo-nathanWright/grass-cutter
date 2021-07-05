@@ -14,12 +14,23 @@
 
 <body>
     <header class="text-center">
-        <h1>Grass Growers Inc.</h1>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand">Grass Growers Inc.</a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </nav>
     </header>
     <main class="container-fluid">
         <div class="row flex-row justify-content-between">
             <div class="col-4">
-                <div class="row flex-column align-content-between">
+                <div class="row flex-column align-content-between py-2">
                     <div class="col-12 d-flex flex-column justify-content-end text-center">
                         <h3>Company Inventory</h3>
                         <hr>
@@ -63,7 +74,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="row flex-column">
+                <div class="row flex-column py-2">
                     <div class="col-12 d-flex flex-column justify-content-end text-center">
                         <h3>Company Upgrades</h3>
                         <hr>
