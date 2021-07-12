@@ -205,3 +205,4 @@ function update() {
     calcModifiers('auto')
 }
 startInterval()
+update()
