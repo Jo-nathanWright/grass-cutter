@@ -30,6 +30,7 @@ const modifiers = {
         }
     }
 }
+//#region SECTION VERSION 1.0 of the code
 //#region SECTION VERSION 1.0 of the dictionary
 // let clickUpgrades = {
 //     pickaxes: {
@@ -153,7 +154,7 @@ const modifiers = {
 // console.log('Modifier : ', modifyer)
 // console.log('Auto Modifier : ', autoModifyer)
 //#endregion
-
+//#endregion
 function mine() {
     cheese += (1 + calcModifiers('click'))
     update()
@@ -170,10 +171,7 @@ function buy(type, name) {
         item.price += item.upcharge
         update()
     }
-    console.log(item)
-    console.log('Name - ', name)
-    console.log('Item Amount - ', item.quantity)
-    console.log('Items Price - ', item.price)
+    console.log("I'm Still Working!")
     update()
 }
 function startInterval() {
