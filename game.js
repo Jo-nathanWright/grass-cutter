@@ -2,13 +2,13 @@ let cheese = 0;
 
 const modifiers = {
     click: {
-        pickaxes: {
+        sprinkler: {
             price: 100,
             quantity: 0,
             multiplier: 1,
             upcharge: 25
         },
-        cutter: {
+        fertilizer: {
             price: 250,
             quantity: 0,
             multiplier: 5,
@@ -16,13 +16,13 @@ const modifiers = {
         }
     },
     auto: {
-        rovers: {
+        cutter: {
             price: 500,
             quantity: 0,
             multiplier: 10,
             upcharge: 250
         },
-        rockets: {
+        mower: {
             price: 1000,
             quantity: 0,
             multiplier: 25,
@@ -196,14 +196,14 @@ function update() {
     //SECTION This in theory should be all I need to modify the screen amount
     //document.getElementById("${item}".innerText = `${item.quantity}`)
 
-    document.getElementById("pickaxe").innerText = `${modifiers.click.pickaxes.quantity}`
-    document.getElementById("cutter").innerText = `${modifiers.click.cutter.quantity}`
-    document.getElementById("rover").innerText = `${modifiers.auto.rovers.quantity}`
-    document.getElementById("rocket").innerText = `${modifiers.auto.rockets.quantity}`
-    document.getElementById("pickaxePrice").innerText = `${modifiers.click.pickaxes.price}`
-    document.getElementById("cutterPrice").innerText = `${modifiers.click.cutter.price}`
-    document.getElementById("roverPrice").innerText = `${modifiers.auto.rovers.price}`
-    document.getElementById("rocketPrice").innerText = `${modifiers.auto.rockets.price}`
+    document.getElementById("sprinkler").innerText = `${modifiers.click.sprinkler.quantity}`
+    document.getElementById("fertilizer").innerText = `${modifiers.click.fertilizer.quantity}`
+    document.getElementById("cutter").innerText = `${modifiers.auto.cutter.quantity}`
+    document.getElementById("mower").innerText = `${modifiers.auto.mower.quantity}`
+    document.getElementById("sprinklerPrice").innerText = `${modifiers.click.sprinkler.price}`
+    document.getElementById("fertilizerPrice").innerText = `${modifiers.click.fertilizer.price}`
+    document.getElementById("cutterPrice").innerText = `${modifiers.auto.cutter.price}`
+    document.getElementById("mowerPrice").innerText = `${modifiers.auto.mower.price}`
     document.getElementById("clickMod").innerText = `${calcModifiers('click') + 1}`
     document.getElementById("autoMod").innerText = `${calcModifiers('auto')}`
 

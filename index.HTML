@@ -16,15 +16,6 @@
     <header class="text-center">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand">Grass Growers Inc.</a>
-            <form class="form-inline">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                </div>
-            </form>
         </nav>
     </header>
     <main class="container-fluid">
@@ -50,16 +41,16 @@
                         <div class="text-center">
                             <p>Your Money Makers</p>
                             <div class="col-12 d-flex flex-column align-items-center pt-4">
-                                <p>You have <span id="pickaxe">0</span> pickaxes!</p>
+                                <p>You have <span id="sprinkler">0</span> sprinklers!</p>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center">
+                                <p>You have <span id="fertilizer">0</span> fertilizers!</p>
                             </div>
                             <div class="col-12 d-flex flex-column align-items-center">
                                 <p>You have <span id="cutter">0</span> cutters!</p>
                             </div>
                             <div class="col-12 d-flex flex-column align-items-center">
-                                <p>You have <span id="rover">0</span> rovers!</p>
-                            </div>
-                            <div class="col-12 d-flex flex-column align-items-center">
-                                <p>You have <span id="rocket">0</span> rockets!</p>
+                                <p>You have <span id="mower">0</span> mowers!</p>
                             </div>
                         </div>
                     </div>
@@ -81,17 +72,17 @@
                     </div>
                     <div class="col-12 d-flex justify-content-around py-4">
                         <div class="d-flex flex-column">
-                            <p class="text-center">Pickaxe: $<span id="pickaxePrice">100</span></p>
-                            <button class="btn btn-primary mb-1" onclick="buy('click', 'pickaxes')">Buy Pickaxe <i
-                                    class="mdi mdi-pickaxe"></i></button>
-                            <p class="mt-2 text-center">Cutter: $<span id="cutterPrice">250</span></p>
-                            <button class="btn btn-primary mb-1" onclick="buy('click', 'cutter')">Buy Cutter <i
-                                    class="mdi mdi-saw-blade"></i></button>
-                            <p class="mt-2 text-center">Rover: $<span id="roverPrice">500</span></p>
-                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'rovers')">Buy Rover <i
-                                    class="mdi mdi-car-convertible"></i></button>
-                            <p class="mt-2 text-center">Rocket: $<span id="rocketPrice">1000</span></p>
-                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'rockets')">Buy Rocket <i
+                            <p class="text-center">Sprinkler: $<span id="sprinklerPrice">100</span></p>
+                            <button class="btn btn-primary mb-1" onclick="buy('click', 'sprinkler')">Buy Sprinkler <i
+                                    class="mdi mdi-sprinkler-variant"></i></button>
+                            <p class="mt-2 text-center">Fertilizer: $<span id="fertilizerPrice">250</span></p>
+                            <button class="btn btn-primary mb-1" onclick="buy('click', 'fertilizer')">Buy Fertilizer <i
+                                    class="mdi mdi-sack"></i></button>
+                            <p class="mt-2 text-center">Cutter: $<span id="cutterPrice">500</span></p>
+                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'cutter')">Buy Cutter <i
+                                    class="mdi mdi-content-cut"></i></button>
+                            <p class="mt-2 text-center">Mower: $<span id="mowerPrice">1000</span></p>
+                            <button class="btn btn-primary mb-1" onclick="buy('auto', 'mower')">Buy Mower <i
                                     class="mdi mdi-rocket-launch"></i></button>
                         </div>
                     </div>
@@ -135,7 +126,9 @@
             </div>
         </div> -->
     </main>
-    <footer class="container"></footer>
+    <footer class="container-fluid">
+        <div class="row bg-dark"></div>
+    </footer>
     <script src="game.js"></script>
 </body>
 
