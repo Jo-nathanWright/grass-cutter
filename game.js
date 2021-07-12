@@ -190,10 +190,6 @@ function calcModifiers(type) {
 function update() {
     //Put the id in the dictionary
     document.getElementById("cheeseTotal").innerText = `${cheese}`
-
-    //SECTION This in theory should be all I need to modify the screen amount
-    //document.getElementById("${item}".innerText = `${item.quantity}`)
-
     document.getElementById("sprinkler").innerText = `${modifiers.click.sprinkler.quantity}`
     document.getElementById("fertilizer").innerText = `${modifiers.click.fertilizer.quantity}`
     document.getElementById("cutter").innerText = `${modifiers.auto.cutter.quantity}`
