@@ -3,30 +3,30 @@ let cheese = 0;
 const modifiers = {
     click: {
         sprinkler: {
-            price: 100,
+            price: 10,
             quantity: 0,
             multiplier: 1,
-            upcharge: 25
+            upcharge: 1.5
         },
         fertilizer: {
-            price: 250,
+            price: 50,
             quantity: 0,
             multiplier: 5,
-            upcharge: 50
+            upcharge: 2
         }
     },
     auto: {
         cutter: {
-            price: 500,
+            price: 250,
             quantity: 0,
             multiplier: 10,
-            upcharge: 250
+            upcharge: 4
         },
         mower: {
-            price: 1000,
+            price: 500,
             quantity: 0,
             multiplier: 25,
-            upcharge: 500
+            upcharge: 5
         }
     }
 }
@@ -168,7 +168,7 @@ function buy(type, name) {
     if (cheese >= item.price) {
         cheese = cheese - item.price
         item.quantity++
-        item.price += item.upcharge
+        item.price = Math.floor(item.price * item.upcharge)
         update()
     }
     console.log("I'm Still Working!")
